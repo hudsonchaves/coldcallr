@@ -1,0 +1,55 @@
+---
+title: "Cold call your students. They will love it!"
+output: html_document
+runtime: shiny
+---
+
+``` {r echo=FALSE}
+source("~/gh/coldcallr/coldcallr.R", local = TRUE)
+
+setwd("~/gh/coldcallr")  ## rmarkdown needs this
+section <- c("Fictional-delinquents")
+sinfo <- student_info(section, "student-info/")
+```
+
+## Section: `r section`
+
+Image sources:
+
+* <a href="http://www.huffingtonpost.com/2014/06/09/fairytale-mugshots_n_5475538.html" target="_blank">fairytale-mugshots</a>
+* <a href="http://thefw.com/cartoon-character-mugshots/" target="_blank">cartoon-character-mugshots</a>
+
+`r section_email(sinfo, sep = ",")`
+
+<details>
+<summary>List</summary>
+`r kable(sinfo, format = "markdown")`
+</details>
+
+<details>
+<summary>Names</summary>
+`r mem_names(sinfo)`
+</details>
+
+<details open>
+<summary>Cold-call</summary>
+
+```{r}
+actionButton("cold_call_button_rmd", "Cold call Rmd")
+
+observeEvent(input$cold_call_button_rmd, {
+  ## nothing shown
+  kable(cold_call(sinfo, nr = 3), format = "markdown")
+})
+
+## this works but output not linked to action button
+# kable(cold_call(sinfo, nr = 2), format = "markdown")
+```
+
+```{r}
+## this works but the DT table doesn't show images
+cold_call_shiny(sinfo, nr = 2)
+```
+
+</details>
+
