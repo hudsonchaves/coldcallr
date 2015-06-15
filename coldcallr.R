@@ -1,4 +1,4 @@
-suppressMessages(library(dplyr))
+library(dplyr)
 library(magrittr)
 library(dplyr)
 library(shiny)
@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = FALSE, comment = NA, cache = FALSE,
 
 student_info <- function(section, spath, img_type = ".jpg") {
 
-  sinfo <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+  sinfo <- read.csv(paste0(spath, section, ".csv"), as.is = TRUE) %>%
     arrange(last_name, first_name)
     sinfo
 
@@ -66,15 +66,32 @@ cold_call_shiny <- function(sinfo, nr = 5) {
           }"))
       ),
       fluidRow(
-        actionButton("cold_call_button", "Cold call DT")
+        actionButton("cold_call_button", "Cold call shiny")
       ),
       fluidRow(
-        htmlOutput("cold_call_table"),
-        DT::dataTableOutput("cold_call_DT")
+        tableOutput("cold_call_table")
+        # htmlOutput("cold_call_xtable")
+        # , DT::dataTableOutput("cold_call_DT")
       )
     ),
 
     server = function(input, output, session) {
+
+      output$cold_call_table <- renderTable({
+        if(input$cold_call_button == 0) return()
+        cold_call(sinfo, nr = nr)
+      }, sanitize.text.function = identity)
+
+      output$cold_call_xtable <- renderText({
+        if(input$cold_call_button == 0) return()
+        cold_call(sinfo, nr = nr) %>%
+        xtable::xtable(.) %>%
+        print(type = "html",  print.results = FALSE, include.rownames = FALSE,
+              sanitize.text.function=identity) %>%
+        sub("<table border=*.1*.>","<table class='table table-condensed table-hover'>", .,
+        perl = TRUE)
+      })
+
       output$cold_call_DT <- DT::renderDataTable({
         if(input$cold_call_button == 0) return()
         cold_call(sinfo, nr = nr) %>%
@@ -90,7 +107,7 @@ cold_call_shiny <- function(sinfo, nr = 5) {
           )
       })
     },
-    options = list(height = 80 + 100 * nr)
+    options = list(width = "100%", height = 80 + 100 * nr)
   )
 }
 

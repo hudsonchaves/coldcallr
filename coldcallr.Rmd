@@ -5,7 +5,7 @@ runtime: shiny
 ---
 
 ``` {r echo=FALSE}
-source("~/gh/coldcallr/coldcallr.R", local = TRUE)
+suppressMessages(source("~/gh/coldcallr/coldcallr.R", local = TRUE))
 
 setwd("~/gh/coldcallr")  ## rmarkdown needs this
 section <- c("Fictional-delinquents")
