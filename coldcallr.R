@@ -22,8 +22,6 @@ student_info <- function(section, spath, img_type = ".jpg") {
 
   sinfo %<>% mutate(pref_name = ifelse(pref_name == "", first_name, pref_name))
   sinfo$group_name %<>% as.factor
-  sinfo$email %<>%  {paste0("<a href=\"mailto:", ., "\">", ., "</a>")}
-  sinfo$pref_email %<>%  {paste0("<a href=\"mailto:", ., "\">", ., "</a>")}
   sinfo$id <- paste0(sinfo$first_name, ".", sinfo$last_name)
   sinfo$images <- paste0(spath, "/", section, "/", sinfo$id, img_type)
 
@@ -39,7 +37,7 @@ student_info <- function(section, spath, img_type = ".jpg") {
 }
 
 section_email <- function(sinfo, email = "pref_email", sep = ";")
-  paste0("<a href=\"mailto:", paste0(sinfo[[email]], collapse = sep), "\">Send section email: ", section, "</a>")
+  paste0("Email section: <a href=\"mailto:", paste0(sinfo[[email]], collapse = sep), "\">", section, "</a>")
 
 mem_names <- function(sinfo, nr_col = 8) {
   sinfo$images %<>% sub("height:[0-9]{2,3}px", "height:120px", .)
@@ -87,6 +85,10 @@ DT_simple <- function(sinfo, btn, nr = 4) {
 }
 
 DT_full <- function(sinfo) {
+
+  sinfo$email %<>%  {paste0("<a href=\"mailto:", ., "\">", ., "</a>")}
+  sinfo$pref_email %<>%  {paste0("<a href=\"mailto:", ., "\">", ., "</a>")}
+
   DT::renderDataTable({
     DT::datatable(sinfo, filter = list(position = "top", clear = FALSE, plain = FALSE),
       rownames = FALSE, style = "bootstrap", escape = FALSE,
