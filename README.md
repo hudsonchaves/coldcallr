@@ -24,7 +24,7 @@ Uses rmarkdown, shiny, dplyr, and DT. See `coldcallr.R` for all packages used. D
 
 `install.packages("DT", repos = "http://vnijs.github.io/radiant_miniCRAN/")`
 
-Also requires a csv file with students names and student picture. See the content of the student-info directory for details.
+Requires a csv file with student information and also student pictures. See the content of the student-info directory for details.
 
 ## Images from ...
 
