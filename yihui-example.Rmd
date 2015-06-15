@@ -1,0 +1,19 @@
+---
+output: html_document
+runtime: shiny
+---
+
+Works:
+
+```{r}
+file.copy(file.path(R.home("doc"), "html", "logo.jpg"), "logo.jpg")
+d = cbind(x = '<img src="logo.jpg" title="foo bar" style="height:30px;" />', y = 'foo')
+knitr::kable(d, 'markdown', escape = FALSE)
+```
+
+renderTable doesn't work either:
+
+```{r}
+renderTable({d}, sanitize.text.function = identity)
+DT::datatable(d, escape = FALSE)
+```
