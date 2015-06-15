@@ -52,7 +52,7 @@ mem_names <- function(sinfo, nr_col = 8) {
 
 mem_table <- function(sinfo, btn, nr_col = 8) {
   renderTable({
-    if(input[[btn]] == 0) return()
+    input[[btn]]  ## dependency on shuffle button
     mem_names(sinfo, nr_col)
   }, include.colnames = FALSE, include.rownames = FALSE,
      sanitize.text.function = identity)
