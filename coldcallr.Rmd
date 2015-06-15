@@ -5,11 +5,12 @@ runtime: shiny
 ---
 
 ``` {r echo=FALSE}
-suppressMessages(source("~/gh/coldcallr/coldcallr.R", local = TRUE))
-
 setwd("~/gh/coldcallr")  ## rmarkdown needs this
+suppressMessages(source("coldcallr.R", local = TRUE))
+spath <- "student-info"
 section <- c("Fictional-delinquents")
-sinfo <- student_info(section, "student-info/")
+addResourcePath(spath, file.path(getwd(), spath))
+sinfo <- student_info(section, spath)
 ```
 
 ## Section: `r section`
@@ -21,35 +22,28 @@ Image sources:
 
 `r section_email(sinfo, sep = ",")`
 
+<details open>
+<summary>Cold call</summary>
+
+```{r}
+actionButton("cold_call_btn", "Cold call")
+DT_simple(sinfo, "cold_call_btn", nr = 3)
+```
+</details>
+
 <details>
 <summary>List</summary>
-`r kable(sinfo, format = "markdown")`
+
+```{r}
+DT_full(sinfo)
+```
 </details>
 
 <details>
 <summary>Names</summary>
-`r mem_names(sinfo)`
-</details>
-
-<details open>
-<summary>Cold-call</summary>
 
 ```{r}
-actionButton("cold_call_button_rmd", "Cold call Rmd")
-
-observeEvent(input$cold_call_button_rmd, {
-  ## nothing shown
-  kable(cold_call(sinfo, nr = 3), format = "markdown")
-})
-
-## this works but output not linked to action button
-# kable(cold_call(sinfo, nr = 2), format = "markdown")
+actionButton("shuffle_img", "Shuffle")
+mem_table(sinfo, "shuffle_img")
 ```
-
-```{r}
-## this works but the DT table doesn't show images
-cold_call_shiny(sinfo, nr = 2)
-```
-
 </details>
-

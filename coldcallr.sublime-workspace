@@ -1,0 +1,828 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"reg_pred",
+				"reg_predict_cmd"
+			],
+			[
+				"cut",
+				"cutree"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"retu",
+				"returnTextArea"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"bonf",
+				"bonferroni"
+			],
+			[
+				"mathj",
+				"mathjax_script"
+			],
+			[
+				"new",
+				"newfood2014"
+			],
+			[
+				"rt",
+				"rtimes"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "coldcallr.R",
+			"settings":
+			{
+				"buffer_size": 3580,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					""
+				],
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					"Vintageous - Test (All)"
+				],
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					"Vintageous - Test (This File Only)"
+				]
+			],
+			[
+				"Packages/Vintageous/Vintageous.sublime-build",
+				"Vintageous - Test (This File Only)"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					""
+				],
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					"Vintageous - Test (All)"
+				],
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					"Vintageous - Test (This File Only)"
+				],
+				[
+					"Packages/User/Node.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/Node.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 93.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"Sublim",
+				"SublimeREPL: Node"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"tasks",
+				"Tasks: New document"
+			],
+			[
+				"tasks:n",
+				"Tasks: New document"
+			],
+			[
+				"options",
+				"Git (SideBarGit): Pull with options…"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colo",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"proj",
+				"Project: Save As"
+			],
+			[
+				"pro",
+				"Project: Save As"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"up",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"upda",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"ever",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"evern",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"ever up",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"eve",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"ev",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"vinta",
+				"Vintageous: Open .vintageousrc"
+			],
+			[
+				"evernot",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"evernote",
+				"Evernote: New empty note"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"view.run_command('example')",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/vnijs/Desktop/GitHub/coldcallr",
+		"/Users/vnijs/Desktop/GitHub/coldcallr/student-info"
+	],
+	"file_history":
+	[
+		"/Users/vnijs/Desktop/GitHub/coldcallr/coldcallr.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/base/radiant.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/base/tools/data/combine_ui.R",
+		"/Users/vnijs/Desktop/GitHub/coldcallr/style.css",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/quiz.R",
+		"/Users/vnijs/Desktop/GitHub/coldcallr/student-info/Fictional-delinquents.csv",
+		"/Users/vnijs/Desktop/GitHub/coldcallr/Fictional-delinquents.csv",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/init.R",
+		"/Users/vnijs/Desktop/GitHub/coldcallr/coldcallr.Rmd",
+		"/Users/vnijs/Dropbox/teaching/dropbox/prof/cc_test.Rmd",
+		"/Users/vnijs/Desktop/state_test.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/pmap.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/tests/rmarkdown/testing_state_1.rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant/tests/rmarkdown/testing_report.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/mds.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/examples/single_mean.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/base/app/code.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/base/app/pivot.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/base/app/transform.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/base/app/transform.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/base/app/view.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/base/app/view.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/base/app/visualize.md",
+		"/Users/vnijs/Desktop/GitHub/radiant/build/remove_pre_.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/single_prop.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/base/tools/app/report.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/base/tools/app/code.R",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/quant/app/single_mean.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/base/app/manage.md",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/base/global.R",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/base/app/explore.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/base/app/combine.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/marketing/app/hier_clus.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/marketing/app/full_factor.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/marketing/app/conjoint.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/quant/app/single_prop.md",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/correlation.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/full_factor.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/radiant.R",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/sub/README_editable.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/quant/app/regression.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/quant/app/glm_reg.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/quant/app/cross_tabs.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/news.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/about.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/quant/app/compare_props.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/quant/app/compare_means.md",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/programming.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/marketing/tools/analysis/full_factor_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/examples/radiant_rcode.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/kmeans_clus.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/marketing/tools/analysis/kmeans_clus_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/quant/tools/analysis/single_prop_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/single_mean.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/compare_means.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/quant/tools/analysis/compare_means_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/quant/tools/analysis/single_mean_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/sampling.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/quant/tools/analysis/sampling_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/quant/tools/analysis/glm_reg_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/sample_size.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/quant/tools/analysis/sample_size_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/regression.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/quant/tools/analysis/regression_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/pre_factor.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/glm_reg.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/marketing/tools/analysis/pmap_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/marketing/tools/analysis/mds_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/explore.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/base/tools/data/explore_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/R/cross_tabs.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/quant/tools/analysis/cross_tabs_ui.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/base/tools/data/transform.R",
+		"/Users/vnijs/Desktop/GitHub/radiant_gh-pages/base/app/report.md",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/base/init.R",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/cases/case5/01_mini_case_5.Rmd",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/cases/case4/01_mini_case_4.Rmd",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/global.R",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/server.R",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/cases/case2/01_mini_case_2.Rmd",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/cases/case1/01_introduction.Rmd",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/cases/case2/mini_case_2.R",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/cases/case2/02_mini_case_2.Rmd",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/cases/case3/01_mini_case_3.Rmd",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/ui.R",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/cases/case1/mini_case_1.R",
+		"/Users/vnijs/Desktop/GitHub/radiant/build/package_dev_notes.R",
+		"/Users/vnijs/Desktop/GitHub/mba_bootcamp/site/bootcamp.R",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/quiz.R",
+		"/Users/vnijs/Desktop/GitHub/update.scpt",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/ui.R",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/case1/mini_case_1.R",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/case1/04_profit_max.Rmd",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/case1/02_price_sensitivity.Rmd",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/case1/01_introduction.Rmd",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/case1/06_constrained_opt.Rmd",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/case1/05_break_even.Rmd",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/case1/0z_mini_case_1 copy.Rmd",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/case1/0z_mini_case_1.Rmd",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/case1/03_profit.Rmd",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/case1/01_mini_case_1 copy.Rmd",
+		"/Users/vnijs/Desktop/GitHub/radiant/inst/base/tools/app/help.R",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/bootcamp.R",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/server.R",
+		"/Users/vnijs/Desktop/quiz.R",
+		"/Users/vnijs/Dropbox/teaching/dropbox/MGT475-2014/sample-quizzes/libraries/widgets/quiz/README.md",
+		"/Users/vnijs/Dropbox/teaching/dropbox/MGT475-2014/sample-quizzes/libraries/widgets/quiz/js/jquery.quiz.js",
+		"/Users/vnijs/Dropbox/teaching/dropbox/MGT475-2014/sample-quizzes/quiz_1.html",
+		"/Users/vnijs/Dropbox/teaching/dropbox/MGT475-2014/sample-quizzes/libraries/widgets/quiz/js/quiz-app.js",
+		"/Users/vnijs/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/vnijs/Dropbox/Research/ART/munge/02-raw-similarity.R",
+		"/Users/vnijs/Dropbox/Research/ART/src/mds_aggregate_step1.R",
+		"/Users/vnijs/Dropbox/teaching/radiant_stuff/sim/GentilLentel.R",
+		"/Users/vnijs/Dropbox/teaching/radiant_stuff/sim/RadyTastyPastry.R",
+		"/Users/vnijs/Dropbox/Terry/yield.R",
+		"/Users/vnijs/Desktop/emails-to-cba.txt",
+		"/Users/vnijs/Dropbox/teaching/dropbox/prof/student-info/cartoon/cartoon.csv",
+		"/Users/vnijs/Dropbox/teaching/dropbox/prof/example.Rmd",
+		"/Users/vnijs/Dropbox/teaching/dropbox/prof/prof_static.Rmd",
+		"/Users/vnijs/Dropbox/teaching/dropbox/prof/prof_dyn.Rmd",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/modals/derivatives_shoes.md",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/modals/function.md",
+		"/Users/vnijs/Dropbox/teaching/dropbox/prof/prof_dyn_grading.Rmd",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/modals/demand_price.md",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/modals/demand_function.md",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/modals/derivatives.md",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/modals/derivatives_rules.md",
+		"/Users/vnijs/Dropbox/BA-bootcamp/site/cases/case1/00_mini_case_1.Rmd"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"*.R",
+			"*.R*",
+			"*.R",
+			"*.Rmd",
+			"*.R",
+			"",
+			"*.R",
+			"*.Rmd",
+			"",
+			"*.R",
+			"radiant_gh-pages/*.md",
+			"radiant_gh-pages/*.Rmd",
+			"radiant_gh-pages/*.R",
+			"radiant_gh-pages/",
+			"radiant_gh-pages",
+			"radiant_gh-pages/*.R",
+			"*.R",
+			"",
+			"radiant_dev/*.R",
+			"DT_vnijs/*",
+			"DT_vnijs/*.js",
+			"DT_vnijs/*",
+			"DT_vnijs/*.R",
+			"DT_vnijs\\*.R",
+			"*.R",
+			"",
+			"*.R",
+			"",
+			"*.R",
+			"shinystan/*.R",
+			"*.R",
+			"R/*.R",
+			"*.R",
+			"*.md",
+			"*.Rmd",
+			"*.R",
+			"",
+			"inst/marketing",
+			"inst/quant",
+			"",
+			"inst/base",
+			"",
+			"inst/base",
+			"*.R",
+			"R/*.R",
+			"",
+			"R/*.R",
+			"",
+			"marketing/app/*.md, marketing/app/*.Rmd",
+			"quant/app/*.md, quant/app/*.Rmd",
+			"quant/app/*.md",
+			"*.R",
+			"*.Rmd",
+			"*.md",
+			"",
+			"<open folders>",
+			"",
+			"*.Rmd",
+			"*.md",
+			"",
+			"*.R",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"show_data_snippet",
+			"observeEvent",
+			"```{r echo=FALSE}\nactionButton(\"cc_call_em\", \"Cold call\")\nrnd_students <- function() {\n  ret <- student_info(class)$stud_df\n  ret$rnd_number <- runif(nrow(ret), min = 0, max = 1)\n  ret %>%\n    arrange(desc(rnd_number)) %>%\n    filter(group_name != \"\") %>%\n    select(rnd_number, pref_name, last_name, group_name, images)\n}\n\nDT::renderDataTable({\n  if(input$cc_call_em == 0) return()\n  rnd_students() %>% slice(1:5) %>%\n  DT::datatable(rownames = FALSE, style = \"bootstrap\", escape = FALSE,\n    options = list(\n      paging = FALSE,\n      searching = FALSE,\n      searchable = FALSE,\n      columnDefs = list(list(className = 'dt-center', targets = \"_all\")),\n      autoWidth = TRUE,\n      processing = FALSE\n    )\n  )\n})\n",
+			"vnijs@ucsd.edu",
+			"save",
+			"getdata",
+			"mds_",
+			"stop(",
+			"cat",
+			"cat(",
+			"cat",
+			"fround",
+			"round",
+			"fround",
+			"sp_sig_level",
+			"ui_sp_levels",
+			"sp_levels",
+			"sp_plots",
+			"plots",
+			"sig_level",
+			"sp_comp_value",
+			"sp_var",
+			"sp_alternative",
+			"sp_levels",
+			"smp_sample_size",
+			"smp_var",
+			"ss_z",
+			"ss_prop_p",
+			"ss_prop_err",
+			"ss_mean_s",
+			"ss_mean_err",
+			"r_drop",
+			"ss_",
+			"ss_response",
+			"response",
+			"ss_incidence",
+			"incidence",
+			"ss_prop_p",
+			"ss_prop_err",
+			"err_prop",
+			"ss_mean_s",
+			"sd_mean",
+			"ss_mean_err",
+			"err_mean",
+			"ss_mean_err",
+			"ss_z",
+			"zval",
+			"ss_type",
+			"type",
+			"High",
+			"HighEnd",
+			"High",
+			"HighEnd",
+			"test_specs",
+			"reg_predict_data",
+			"reg_predict_cmd",
+			"lines",
+			"reg_",
+			"reg_facet_col",
+			"p",
+			"reg_facet_row",
+			"reg_xvar",
+			"reg_",
+			"pred_type",
+			"reg_predict_type",
+			"reg_predict_data",
+			"reg_predict_cmd",
+			"reg_",
+			"reg_coef_int",
+			"intercept",
+			"reg_coef_int",
+			"reg_conf_level",
+			"conf_level",
+			"reg_sum_check",
+			"reg_indep_var",
+			"reg_dep_var",
+			"reg_color",
+			"color",
+			"reg_lines",
+			"lines",
+			"check",
+			"reg_plots",
+			"plots",
+			"reg_test_var",
+			"reg_check",
+			"reg_int_var",
+			"Brand",
+			"pm_plot",
+			"ui_pm_plot",
+			"pm_dim_number",
+			"pm_fontsz",
+			"pm_scaling",
+			"pm_plot",
+			"pm_cutoff",
+			"pm_dim_number",
+			"pm_pref",
+			"pm_attr",
+			"pm_brand",
+			"mds_dim_number",
+			"mds_rev_dim",
+			"mds_dim_number",
+			"mds_dis",
+			"mds_id2",
+			"mds_id1",
+			"mds_round",
+			"mds_method",
+			"method",
+			"dis",
+			"id2",
+			"id1",
+			"probit",
+			"glm_predict_data",
+			"glm_predict_cmd",
+			"glm_",
+			"glm_facet_row",
+			"glm_xvar",
+			"reg_predict_type",
+			"glm_predict_type",
+			"reg_",
+			"glm_predict_data",
+			"glm_predict_cmd",
+			"glm_test_var",
+			"glm_coef_int",
+			"glm_lev",
+			"glm_indep_var",
+			"glm_dep_var",
+			"glm_conf_level",
+			"conf_level"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"fictional-delinquents@gmail.com",
+			"shaved",
+			"fround",
+			"floadings",
+			"is_string(dataset",
+			"withMathJaxIP",
+			"if (",
+			"\"quant",
+			"\"base",
+			"for (",
+			"if (",
+			"r_local",
+			"file.path(r_path",
+			"paste0(path,\"/m",
+			"paste0(path,\"/q",
+			"vnijs",
+			"http://mostly-harmless.github.io/radiant/marketing/figures_marketing",
+			"http://mostly-harmless.github.io/radiant/quant/figures_quant",
+			"update_report(",
+			"register_plot_output(",
+			"register_print_output(",
+			"ui_datasets",
+			"ui_data",
+			"stat_tab_panel",
+			"help_modal",
+			"changedata",
+			"getdata",
+			"entered",
+			"</i>",
+			"<i ",
+			" glyphicon glyphicon-remove",
+			" glyphicon glyphicon-ok",
+			"r_data",
+			"ip_data",
+			" r_data",
+			"r_data[[",
+			" r_data <-",
+			"r_state",
+			"r_env",
+			"sm_args",
+			"dataset",
+			"Vincent Nijs (2015)",
+			"%",
+			"_",
+			"_regression",
+			"_base_",
+			"_random_",
+			" \\$",
+			"pdf"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "coldcallr.R",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3580,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2832,
+								2832
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "r extended",
+							"buffer_scroll_name": "1e378462",
+							"spell_check": false,
+							"syntax": "Packages/R-Box/syntax/R Extended.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 24
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 728.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 286.0
+	},
+	"output.find_results":
+	{
+		"height": 331.0
+	},
+	"pinned_build_system": "Packages/User/Node.sublime-build",
+	"project": "coldcallr.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"radiant_dev/.V8history"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 375.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 378.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"vintage":
+		{
+		}
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 181.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

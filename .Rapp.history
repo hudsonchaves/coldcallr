@@ -1,0 +1,322 @@
+plot(result, plots = "dashboard", lines = "line", conf_lev = 0.99)
+result <- predict(result, pred_data = "diamonds", conf_lev = 0.99, save_pred = TRUE)
+result <- predict(result, pred_data = "diamonds", conf_lev = 0.99)
+result <- regression(dataset = "diamonds", dep_var = "price", indep_var = c("carat", "clarity"))
+summary(result, sum_check = c("rmse", "confint"), conf_lev = 0.99)
+save_reg_resid(result)
+plot(result, plots = "dashboard", lines = "line", conf_lev = 0.99)
+result <- predict(result, pred_data = "diamonds", conf_lev = 0.99)
+print(result)
+result <- predict(result, pred_data = "diamonds", conf_lev = 0.99)
+result <- regression(dataset = "diamonds", dep_var = "price", indep_var = c("carat", "clarity"))
+pred <- predict(result, pred_data = "diamonds", conf_lev = 0.99)
+print(pred)
+write.csv(pred, file = '~/reg_sav_pred.csv', row.names = FALSE)
+result <- glm_reg(dataset = "titanic", dep_var = "survived", indep_var = c("pclass", "sex", "age"),
+lev = "Yes", int_var = "pclass:sex")
+summary(result, sum_check = "vif", test_var = "sex")
+save_glm_resid(result)
+plot(result, plots = "coef")
+pred <- predict(result, pred_cmd = "pclass = levels(pclass), sex = levels(sex), age = seq(0, 100, 20)")
+plot(pred, xvar = "age", facet_col = "pclass", color = "sex")
+write.csv(pred, file = '~/glm_sav_pred.csv', row.names = FALSE)
+result <- mds(dataset = "tpbrands", id1 = "id1", id2 = "id2", dis = "dissimilarity",
+method = "non-metric", nr_dim = "3")
+summary(result)
+plot(result, rev_dim = c("2", "3"))
+result <- pmap(dataset = "computer", brand = "Brand", attr = c("HighEnd", "Stylish", "Modern", "Value", "Dated", "Innovative"),
+pref = "Business", nr_dim = "3")
+result <- pmap(dataset = "computer", brand = "brand", attr = "high_end:innovative",
+pref = "business", nr_dim = "3")
+result <- pmap(dataset = "computer", brand = "brand", attr = "high_end:innovative",
+pref = "business", nr_dim = "3")
+summary(result)
+plot(result, plots = c("brand", "attr", "pref"), fontsz = 2)
+save_factors(result)
+result <- pre_factor(dataset = "toothpaste", vars = "v1:v6")
+summary(result)
+plot(result)
+result <- full_factor(dataset = "toothpaste", vars = "v1:v6")
+summary(result, cutoff = 0.2, fsort = TRUE)
+plot(result)
+save_factors(result)
+result <- hier_clus(dataset = "toothpaste", vars = "v1:v6")
+summary(result)
+plot(result, plots = c("scree", "diff", "dendro"))
+result <- kmeans_clus(dataset = "toothpaste", vars = "v1:v6", nr_clus = 3)
+summary(result)
+plot(result)
+save_membership(result)
+save_kmeans(result, file = '~/kmeans.csv')
+write.csv(result$clus_means, file = '~/kmeans.csv')
+result <- conjoint_profiles(dataset = "ca_attr")
+result <- conjoint_profiles(dataset = "cap_attr")
+result <- conjoint(dataset = "mp3", dep_var = "Rating", indep_var = c("Memory", "Radio", "Size", "Price", "Shape"))
+result <- conjoint(dataset = "mp3", dep_var = "Rating",
+indep_var = c("Memory", "Radio", "Size", "Price", "Shape"))
+summary(result, vif = TRUE)
+summary(result, mc_diag = TRUE)
+plot(result, plots = "pw", scale_plot = TRUE)
+plot(result, plots = "pw", scale_plot = FALSE)
+result <- mds(dataset = "tpbrands", id1 = "id1", id2 = "id2", dis = "dissimilarity",
+method = "non-metric", nr_dim = "3")
+summary(result)
+plot(result, rev_dim = c("2", "3"))
+dir
+dir
+section <- c("Fictional-delinquents")
+spath <- "~/gh/coldcallr"
+sinf <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+arrange(last_name, first_name) -> info
+suppressMessages(library(dplyr))
+sinf <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+arrange(last_name, first_name) -> info
+section <- c("Fictional-delinquents")
+library(dplyr)
+sinfo <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+arrange(last_name, first_name)
+spath <- "~/gh/coldcallr/student_info/"
+sinfo <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+arrange(last_name, first_name)
+section <- c("Fictional-delinquents")
+spath <- "~/gh/coldcallr/student_info/"
+files.list(spath)
+list.files(spath)
+spath <- "~/gh/coldcallr/student-info/"
+sinfo <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+arrange(last_name, first_name)
+list.files(spath)
+sinfo <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+arrange(last_name, first_name)
+sinfo
+emails <- paste0("<a href=\"mailto:",paste0(sinfo$preferred_email, collapse = ";"),"\">Send class email: ", class,"</a>")
+emails <- paste0("<a href=\"mailto:",paste0(sinfo$preferred_email, collapse = ";"),"\">Send class email: ", section,"</a>")
+sinfo %<>% mutate(pref_name = ifelse(pref_name == "", first_name, pref_name))
+library(magrittr)
+sinfo <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+arrange(last_name, first_name)
+emails <- paste0("<a href=\"mailto:",paste0(sinfo$preferred_email, collapse = ";"),"\">Send class email: ", section,"</a>")
+sinfo %<>% mutate(pref_name = ifelse(pref_name == "", first_name, pref_name))
+sinfo$id <- paste0(info$first_name,".",info$last_name)
+sinfo$id <- paste0(sinfo$first_name,".",info$last_name)
+sinfo$id <- paste0(sinfo$first_name, ".", sinfo$last_name)
+images <- paste0(spath, section, "/", sinfo$id, ".jpg")
+img_type <- ".jpg"
+images <- paste0(spath, section, "/", sinfo$id, img_type)
+images[!file.exists(images)] <- "student-info/zzz111.jpg"
+email_list <- paste0("<a href=\"mailto:",paste0(sinfo$preferred_email, collapse = ";"),"\">Send class email: ", section,"</a>")
+sinfo %<>% mutate(pref_name = ifelse(pref_name == "", first_name, pref_name))
+email_section <- paste0("<a href=\"mailto:",paste0(sinfo$preferred_email, collapse = ";"),"\">Send section email: ", section,"</a>")
+sinfo$id <- paste0(sinfo$first_name, ".", sinfo$last_name)
+sinfo$images <- paste0(spath, section, "/", sinfo$id, img_type)
+sinfo$images[!file.exists(sinfo$images)] <- "student-info/zzz111.jpg"
+sinfo$images <- with(sinfo, paste0("<img src='", images,"' title='", pref_name, " ", last_name,"' style='height:60px'>")
+sinfo$images <- with(sinfo, paste0("<img src='", images,"' title='", pref_name, " ", last_name,"' style='height:60px'>"))
+sinfo$images <- with(sinfo, paste0("<img src='", images,"' title='", pref_name, " ", last_name,"' style='height:60px'>"))
+sinfo
+section <- c("Fictional-delinquents")
+spath <- "~/gh/coldcallr/student-info/"
+student_info <- function(section, spath = "~/gh/coldcallr/student-info/",#
+                         img_type = ".jpg") {#
+#
+  sinfo <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%#
+    arrange(last_name, first_name)#
+#
+  email_section <- paste0("<a href=\"mailto:", paste0(sinfo$preferred_email, collapse = ";"), "\">Send section email: ", section, "</a>")#
+  sinfo %<>% mutate(pref_name = ifelse(pref_name == "", first_name, pref_name))#
+  sinfo$id <- paste0(sinfo$first_name, ".", sinfo$last_name)#
+  sinfo$images <- paste0(spath, section, "/", sinfo$id, img_type)#
+#
+  ## if an image is missing use a standard image#
+  sinfo$images[!file.exists(sinfo$images)] <- "student-info/zzz111.jpg"#
+#
+  ## site_path <- "http://132.239.212.195/site_media/"#
+  ## site_path <- "file://localhost/Users/vnijs/Dropbox/teaching/dropbox/prof/"#
+  ## images <- paste0(site_path,images)#
+#
+  sinfo$images <- with(sinfo, paste0("<img src='", images,"' title='", pref_name, " ", last_name,"' style='height:60px'>"))#
+#
+  sinfo#
+#
+  # return(list("emails" = emails, "stud_df" = stud_df, #
+  #             "stud_list" = kable(info, format = "markdown"), #
+  #             "mnames" = mnames))#
+}
+sinfo <- student_info(section, spath)
+sinfo
+kable(sinfo, format = "markdown")
+library(knitr)
+kable(sinfo, format = "markdown")
+kable(sinfo, format = "markdown")
+nr <- nrow(sinfo)
+sinfo
+sinfo$images %<>% sub("height:*.px","height:120px")
+sinfo$images %>% sub("height:*.px","height:120px",.)
+sinfo <- student_info(section, spath)
+sinfo$images %>% sub("height:*.px","height:120px",.)
+sinfo$images %>% sub("height:*.px","height:120px",.)
+sinfo$images %>% sub("height:*.px", "height:120px", .)
+sinfo$images %>% sub("height:\d{2,3}\.px", "height:120px", .)
+sinfo$images %>% sub("height:[0-9]{2,3}\.px", "height:120px", .)
+sinfo$images %>% sub("height:[0-9]{2,3}.px", "height:120px", .)
+?sub
+sinfo$images %>% sub("height:[0-9]{2,3}.px", "height:120px", ., perl = TRUE)
+sinfo$images %>% sub("height:[0-9]{2,3}px", "height:120px", ., perl = TRUE)
+sinfo$images %>% sub("height:[0-9]{2,3}px", "height:120px", .)
+sinfo$images %<>% sub("height:[0-9]{2,3}px", "height:120px", .)
+nr <- nrow(sinfo)
+snames <- sample(sinfo$images, nr)
+rnd
+ssample <- sample(sinfo$images, nr)
+rndmat <- matrix("", ncol = nr_col, nrow = ceiling(nr / nr_col))
+nr_col = 8
+sinfo$images %<>% sub("height:[0-9]{2,3}px", "height:120px", .)
+nr <- nrow(sinfo)
+ssample <- sample(sinfo$images, nr)
+rndmat <- matrix("", ncol = nr_col, nrow = ceiling(nr / nr_col))
+rndmat[1:nrstd] <- ssample
+rndmat[1:nr] <- ssample
+mem_names <- function(sinfo, nr_col = 8) {#
+  sinfo$images %<>% sub("height:[0-9]{2,3}px", "height:120px", .)#
+  nr <- nrow(sinfo)#
+  ssample <- sample(sinfo$images, nr)#
+  rndmat <- matrix("", ncol = nr_col, nrow = ceiling(nr / nr_col))#
+  rndmat[1:nr] <- ssample#
+  mnames <- kable(rndmat, format = "markdown")#
+}
+sinfo <- student_info(section, splath)
+sinfo <- student_info(section, spath)
+mem_names(sinfo)
+mem_names <- function(sinfo, nr_col = 8) {#
+  sinfo$images %<>% sub("height:[0-9]{2,3}px", "height:120px", .)#
+  nr <- nrow(sinfo)#
+  ssample <- sample(sinfo$images, nr)#
+  rndmat <- matrix("", ncol = nr_col, nrow = ceiling(nr / nr_col)) %>% #
+    set_colnames(rep("", nr_col))#
+  rndmat[1:nr] <- ssample#
+  mnames <- kable(rndmat, format = "markdown")#
+}
+sinfo <- student_info(section, spath)
+mem_names(sinfo)
+mem_names <- function(sinfo, nr_col = 8) {#
+  sinfo$images %<>% sub("height:[0-9]{2,3}px", "height:120px", .)#
+  nr <- nrow(sinfo)#
+  ssample <- sample(sinfo$images, nr)#
+  rndmat <- matrix("", ncol = nr_col, nrow = ceiling(nr / nr_col)) %>% #
+    set_colnames(rep("", nr_col))#
+  rndmat[1:nr] <- ssample#
+  kable(rndmat, format = "markdown")#
+}
+sinfo <- student_info(section, spath)
+mem_names(sinfo)
+section_email <- function(sinfo) #
+  paste0("<a href=\"mailto:", paste0(sinfo$preferred_email, collapse = ";"), "\">Send section email: ", section, "</a>")
+section_email(sinfo)
+section_email <- function(sinfo)#
+  paste0("<a href=\"mailto:", paste0(sinfo$preferred_email, collapse = "; "), "\">Send section email: ", section, "</a>")
+source("~/gh/coldcallr/coldcallr.R", local = TRUE)
+source("~/gh/coldcallr/coldcallr.R", local = TRUE)
+section <- c("Fictional-delinquents")
+spath <- "~/gh/coldcallr/student-info/"
+source("~/gh/coldcallr/coldcallr.R", local = TRUE)
+knitr::opts_chunk$set(echo = FALSE, comment = NA, cache = FALSE,#
+                      message = FALSE, warning = FALSE)#
+#
+# fpath <- "~/gh/coldcallr/"#
+section <- c("Fictional-delinquents")#
+spath <- "~/gh/coldcallr/student-info/"#
+#
+sinfo <- student_info(section, spath)
+spath <- "~/gh/coldcallr"
+setwd(spath)  ## rmarkdown needs this
+sinfo <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+arrange(last_name, first_name)
+setwd("~/gh/coldcallr")  ## rmarkdown needs this
+section <- c("Fictional-delinquents")
+sinfo <- student_info(section, "student-info/")
+spath = "student-info/"
+sinfo <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+arrange(last_name, first_name)
+sinfo
+sinfo$pref_email <- with(sinfo, paste0(first_name, ".", last_name, "@fic-delinq.org")
+sinfo$pref_email <- with(sinfo, paste0(first_name, ".", last_name, "@fic-delinq.org"))
+sinfo$pref_email <- with(sinfo, paste0(first_name, ".", last_name, "@fic-delinq.org"))
+sinfo$email <- with(sinfo, paste0(first_name, ".", last_name, "@fic-delinq.org"))
+sinfo
+write.csv(sinfo, file = paste0(spath, section, ".csv"))
+sinfo <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+arrange(last_name, first_name)
+sinfo
+sinfo[[-c("preferred_email")]]
+sinfo[[-("preferred_email")]]
+sinfo[,-("preferred_email")]
+sinfo[,-c("preferred_email")]
+sinfo[,"preferred_email"]
+sinfo[,-("preferred_email")]
+sinfo[,-c("preferred_email")]
+sinfo[,-which(colames(sinfo) == "preferred_email")]
+sinfo[,-which(colnames(sinfo) == "preferred_email")]
+sinfo <- sinfo[,-which(colnames(sinfo) == "preferred_email")]
+sinfo <- sinfo[,-which(colnames(sinfo) == "preferred_email")]
+sinfo <- sinfo[,-which(colnames(sinfo) == "preferred_email")]
+sinfo$pref_email <- with(sinfo, paste0(first_name, ".", last_name, "@gmail.com"))
+sinfo
+sinfo <- read.csv(paste0(spath, section, ".csv"), as.is=TRUE) %>%
+arrange(last_name, first_name)
+sinfo
+sinfo
+sinfo <- sinfo[,-which(colnames(sinfo) == "preferred_email")]
+sinfo
+sinfo <- sinfo[,-1]
+sinfo
+sinfo$pref_email <- with(sinfo, paste0(first_name, ".", last_name, "@gmail.com"))
+sinfo$pref_email <- with(sinfo, paste0(first_name, ".", last_name, "@gmail.com"))
+sinfo
+write.csv(sinfo, file = paste0(spath, section, ".csv"), row.names = FALSE)
+email
+section_email <- function(sinfo, email = "pref_email")
+paste0("<a href=\"mailto:", paste0(sinfo[[email]], collapse = ";"), "\">Send section email: ", section, "</a>")
+setwd("~/gh/coldcallr")  ## rmarkdown needs this
+spath <- "student-info"
+section <- c("Fictional-delinquents")
+addResourcePath(spath, file.path(getwd(), spath)
+sinfo <- student_info(section, spath)
+addResourcePath(spath, file.path(getwd(), spath))
+rndmat
+rndmat <- matrix(NA, ncol = nr_col, nrow = ceiling(nr / nr_col)) %>%
+set_colnames(rep("", nr_col))
+rndmat[1:nr] <- ssample
+rndmat
+rndmat[,apply(rndmat, 2, function(x) !any(is.na(x)))]
+sinfo$images %<>% sub("height:[0-9]{2,3}px", "height:120px", .)
+nr <- nrow(sinfo)
+ssample <- sample(sinfo$images, nr)
+sinfo <- read.csv(paste0(spath, "/", section, ".csv"), as.is = TRUE) %>%
+arrange(last_name, first_name)
+sinfo
+sinfo %<>% mutate(pref_name = ifelse(pref_name == "", first_name, pref_name))#
+  sinfo$id <- paste0(sinfo$first_name, ".", sinfo$last_name)#
+  sinfo$images <- paste0(spath, "/", section, "/", sinfo$id, img_type)#
+#
+  ## if an image is missing use a standard image#
+  sinfo$images[!file.exists(sinfo$images)] <- "student-info/zzz111.jpg"#
+#
+  ## if images hosted on remove server#
+  # site_path <- "http://your-remote-server-name/site_media/"#
+  # images <- paste0(site_path,images)#
+#
+  sinfo$images <- with(sinfo, paste0("<img src='", images,"' title='", pref_name, " ", last_name,"' style='height:60px'>"))
+sinfo$images %<>% sub("height:[0-9]{2,3}px", "height:120px", .)
+nr <- nrow(sinfo)
+ssample <- sample(sinfo$images, nr)
+rndmat <- matrix(NA, ncol = nr_col, nrow = ceiling(nr / nr_col)) %>%
+set_colnames(rep("", nr_col))
+rndmat[1:nr] <- ssample
+rndmat[,apply(rndmat, 2, function(x) !any(is.na(x)))]
+dat <- rndmat[,apply(rndmat, 2, function(x) !any(is.na(x)))]
+renderTable({#
+    if(input[[btn]] == 0) return()#
+    dat#
+  }, include.colnames = FALSE, include.rownames = FALSE,#
+     sanitize.text.function = identity)
+suppressMessages(source("coldcallr.R", local = TRUE))
