@@ -23,3 +23,9 @@ Uses rmarkdown, shiny, and DT. As DT is not on CRAN yet install the package from
 `install.packages("DT", repos = "http://vnijs.github.io/radiant_miniCRAN/")`
 
 Also requires a csv file with students names and student picture. See the content of the student-info directory for details.
+
+## Images from ...
+
+<a href="http://www.huffingtonpost.com/2014/06/09/fairytale-mugshots_n_5475538.html" target="_blank">fairytale-mugshots</a>
+
+<a href="http://thefw.com/cartoon-character-mugshots/" target="_blank">cartoon-character-mugshots</a>
