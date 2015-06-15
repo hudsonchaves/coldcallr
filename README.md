@@ -2,7 +2,7 @@
 
 Cold call your students. They will love it!
 
-See the example in action at <a href="http://vnijs.rady.ucsd.edu:3838/coldcallr/coldcallr.Rmd" target="_blank">http://vnijs.rady.ucsd.edu:3838/coldcallr/coldcallr.Rmd</a>
+See an example in action at <a href="https://vnijs.shinyapps.io/coldcallr/coldcallr.Rmd" target="_blank">https://vnijs.shinyapps.io/coldcallr/coldcallr.Rmd</a> 
 
 To run locally, copy the repo to your computer, open `coldcallr.Rmd` in Rstudio, and press `Run Document`. Output can be shown/hidden by clicking the black triangles.
 
