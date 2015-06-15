@@ -5,8 +5,6 @@ runtime: shiny
 ---
 
 ``` {r echo=FALSE}
-## to run locally you must set the working directory
-# setwd("~/gh/coldcallr")  ## needed for rmarkdown
 suppressMessages(source("coldcallr.R", local = TRUE))
 spath <- "student-info"
 section <- c("Fictional-delinquents")

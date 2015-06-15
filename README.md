@@ -2,7 +2,9 @@
 
 Cold call your students. They will love it!
 
-Open coldcallr.Rmd in Rstudio and press `Run Document`. Output can be shown/hidden by clicking the black triangles.
+See the example in action at <a href="http://vnijs.rady.ucsd.edu:3838/coldcallr/coldcallr.Rmd" target="_blank">http://vnijs.rady.ucsd.edu:3838/coldcallr/coldcallr.Rmd</a>
+
+To run locally, copy the repo to your computer, open `coldcallr.Rmd` in Rstudio, and press `Run Document`. Output can be shown/hidden by clicking the black triangles.
 
 ## Cold call
 
@@ -18,7 +20,7 @@ Student pictures in random order. Press the `Shuffle` button to reorder. Hover o
 
 ## Requirements
 
-Uses rmarkdown, shiny, and DT. As DT is not on CRAN yet install the package from rstudio/DT on github using devtools or using the command below:
+Uses rmarkdown, shiny, dplyr, and DT. See `coldcallr.R` for all packages used. DT is not on CRAN so install the package from rstudio/DT on github using devtools or the command below:
 
 `install.packages("DT", repos = "http://vnijs.github.io/radiant_miniCRAN/")`
 
