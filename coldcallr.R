@@ -20,9 +20,10 @@ student_info <- function(section, spath, img_type = ".jpg") {
     arrange(last_name, first_name)
     sinfo
 
-  sinfo$group_name %<>% as.factor
-
   sinfo %<>% mutate(pref_name = ifelse(pref_name == "", first_name, pref_name))
+  sinfo$group_name %<>% as.factor
+  sinfo$email %<>%  {paste0("<a href=\"mailto:", ., "\">", ., "</a>")}
+  sinfo$pref_email %<>%  {paste0("<a href=\"mailto:", ., "\">", ., "</a>")}
   sinfo$id <- paste0(sinfo$first_name, ".", sinfo$last_name)
   sinfo$images <- paste0(spath, "/", section, "/", sinfo$id, img_type)
 
