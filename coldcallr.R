@@ -140,9 +140,9 @@ cold_call_shiny <- function(sinfo, nr = 5) {
         cold_call(sinfo, nr = nr) %>%
         xtable::xtable(.) %>%
         print(type = "html",  print.results = FALSE, include.rownames = FALSE,
-              sanitize.text.function = identity) %>%
-        sub("<table border=*.1*.>","<table class='table table-condensed table-hover'>", .,
-        perl = TRUE)
+              sanitize.text.function = identity,
+              html.table.attributes = "class='table table-condensed table-hover'")
+        # sub("<table border=*.1*.>","<table class='table table-condensed table-hover'>", ., perl = TRUE)
       })
 
       output$cold_call_DT <- DT::renderDataTable({
